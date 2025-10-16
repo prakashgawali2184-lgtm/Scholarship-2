@@ -1,0 +1,154 @@
+/* --- BODY --- */
+body {
+  font-family: 'Mangal', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #fceabb, #f8b500); /* warm gradient */
+  padding: 20px;
+}
+
+/* --- FORM CONTAINER --- */
+form {
+  background-color: #bbf69b;
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 850px;
+  margin: 30px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border: 2px solid #ffd700;
+}
+
+/* --- HEADING --- */
+h1 {
+  text-align: center;
+  color: #d87f0a;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+/* --- LABELS --- */
+label {
+  display: inline-block;
+  width: 220px;
+  margin-bottom: px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* --- INPUT FIELDS --- */
+input, select {
+  width: 250px;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+/* --- HOVER & FOCUS --- */
+input:focus, select:focus {
+  outline: none;
+  border: 2px solid #f8b500;
+  box-shadow: 0 0 8px rgba(248,181,0,0.4);
+}
+
+/* --- BUTTON --- */
+button {
+  display: block;
+  margin: 25px auto;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to right, #f8b500, #ffb84d);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(248,181,0,0.4);
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ffd700, #ffa500);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(248,181,0,0.5);
+}
+
+/* --- SECTIONS --- */
+h3 {
+  color: #d87f0a;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffd700;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* --- PLACEHOLDER STYLE --- */
+select option[value=""], select option[disabled][hidden] {
+  color: #aaa;
+}
+
+/* --- DROPDOWN STYLE --- */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="%239a9a9a" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+  background-color: #fff8dc;
+  background-size: 16px;
+}
+
+/* --- SMALL SHADOWS & TRANSITIONS --- */
+select, input {
+  transition: all 0.3s ease;
+}
+form h3 + label {
+    display: block;      /* ensures the label starts below h3 */
+    margin-top: 10px;    /* optional spacing */
+}
+.form-row {
+    display: flex;
+    align-items: center;   /* vertical alignment of label + select */
+    margin-bottom: 10px;   /* space below the row */
+}
+
+.form-row label {
+    width: 220px;           /* same width as other labels */
+    margin-bottom: 0;       /* remove extra margin */
+}
+
+.form-row select {
+    width: 250px;           /* same as other dropdowns */
+}
+/* Flexible width for specific dropdowns */
+.long-dropdown {
+    width: 400px; /* Adjust this value anytime */
+}
+.short-dropdown {
+  width: 120px;  /* adjust this value as needed */
+  box-sizing: border-box; /* keeps padding inside width */
+}
+/* Change calendar main background */
+.ui-datepicker {
+    background: rgb(200, 40, 130);       /* main calendar background */
+    border: 1px solid #a00;              /* border color */
+    color: white;                         /* default text color */
+}
+
+/* Header style */
+.ui-datepicker-header {
+    background: rgb(230, 220, 17);       /* header background */
+    color: white;                         /* header text color */
+}
+
+/* Selected date */
+.ui-state-active {
+    background: white !important;
+    color: rgb(222, 46, 46) !important;
+}
+
+/* Hover effect */
+.ui-state-hover {
+    background: rgb(74, 112, 182) !important;
+    color: white !important;
+}

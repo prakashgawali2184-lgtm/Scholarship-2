@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<title>सुवर्ण महोत्सवी शिष्यवृत्ती फॉर्म</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<style>
+    body {
+        font-family: 'Mangal', Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 800px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: inline-block;
+        width: 220px;
+        margin-bottom: 10px;
+        vertical-align: top;
+    }
+    input, select {
+        width: 250px;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .ui-datepicker {
+  background: #f039b0;
+  border: 2px solid #b5e2e1;
+  color: #000;
+  border-radius: 10px;
+}
 
+.ui-datepicker-header {
+  background: #6ac6d8;
+  color: white;
+  font-weight: bold;
+}
+
+.ui-state-active {
+  background: #ccde65 !important;
+  color: white !important;
+}
+
+.ui-state-hover {
+  background: #4ee756 !important;
+  color: black !important;
+} 
+</style>
+</head>
+<body>
+
+<h1>सुवर्ण महोत्सवी आदिवासी पूर्व माध्यमिक शिष्यवृत्ती फॉर्म</h1>
+
+<form id="scholarshipForm">
+    <label>विद्यार्थ्याचे पूर्ण नाव (शाळेमधील अभिलेखा नुसार):</label>
+    <input type="text" name="StudentName"><br>
+
+    <label>जनरल रजिस्टर नंबर:</label>
+    <input type="text" name="GRNumber"><br>
+
+    <label>वर्ग:</label>
+    <select name="Class" class="short-dropdown">
+        <option value="" disabled selected hidden>-- निवडा --</option>
+        <option>५ वी</option>
+        <option>६ वी</option>
+        <option>७ वी</option>
+        <option>८ वी</option>
+        <option>९ वी</option>
+        <option>१० वी</option>
+    </select><br>
+    <label>तुकडी:</label>
+    <select name="Division" class="short-dropdown">
+        <option value="" disabled selected hidden>-- निवडा --</option>
+        <option>अ</option>
+        <option>ब</option>
+        <option>क</option>
+    </select><br>
+
+    <label>आईचे नाव:</label>
+    <input type="text" name="MotherName"><br>
+
+    <label>वडिलांचे नाव:</label>
+    <input type="text" name="FatherName"><br>
+
+    <label>आई-वडिलांचा कायमचा पूर्ण पत्ता:</label>
+<select name="PermanentAddress" id="permanentAddressSelect" class="long-dropdown">
+ <option value="PermanentAddress" disabled selected hidden>-- निवडा --</option>
+  <option value="मु.पो.तळेगाव (अं.) ता.जि.नाशिक ">मु.पो.तळेगाव (अं.) ता.जि.नाशिक </option>
+    <option value="मु.पो.खंबाळे ता.त्र्यंबकेश्वर जि.नाशिक">मु.पो.खंबाळे ता.त्र्यंबकेश्वर जि.नाशिक</option>
+    <option value="मु.पो.वाढोली ता.त्र्यंबकेश्वर जि.नाशिक ">मु.पो.वाढोली ता.त्र्यंबकेश्वर जि.नाशिक</option>
+   <option value="मु.जातेगांव पो.पिंपळद ता.जि.नाशिक">मु.जातेगांव पो.पिंपळद ता.जि.नाशिक</option>
+   <option value="मु.दहेगांव पो.वाडीवऱ्हे ता.जि.नाशिक">मु.दहेगांव पो.वाडीवऱ्हे ता.जि.नाशिक</option>
+   <option value="मु.मुळेगांव पो.तळेगांव ता.त्र्यंबकेश्वर जि.नाशिक ">मु.मुळेगांव पो.तळेगांव ता.त्र्यंबकेश्वर जि.नाशिक</option>
+   <option value="मु.पो.महिरावणी ता.जि.नाशिक ">मु.पो.महिरावणी ता.जि.नाशिक</option>
+  <option value="इतर">इतर</option>
+</select>
+<br>
+
+
+    <label>आई-वडिलांचा सध्याचा पत्ता (पत्रव्यवहारासाठी):</label>
+    <select name="CurrentAddress" id="CurrentAddress" class="long-dropdown">
+    <option value="" disabled selected hidden>-- निवडा --</option>
+    <option value="मु.पो.तळेगाव (अं.) ता.जि.नाशिक ">मु.पो.तळेगाव (अं.) ता.जि.नाशिक </option>
+    <option value="मु.पो.खंबाळे ता.त्र्यंबकेश्वर जि.नाशिक">मु.पो.खंबाळे ता.त्र्यंबकेश्वर जि.नाशिक</option>
+    <option value="मु.पो.वाढोली ता.त्र्यंबकेश्वर जि.नाशिक ">मु.पो.वाढोली ता.त्र्यंबकेश्वर जि.नाशिक</option>
+   <option value="मु.जातेगांव पो.पिंपळद ता.जि.नाशिक">मु.जातेगांव पो.पिंपळद ता.जि.नाशिक</option>
+   <option value="मु.दहेगांव पो.वाडीवऱ्हे ता.जि.नाशिक">मु.दहेगांव पो.वाडीवऱ्हे ता.जि.नाशिक</option>
+   <option value="मु.मुळेगांव पो.तळेगांव ता.त्र्यंबकेश्वर जि.नाशिक ">मु.मुळेगांव पो.तळेगांव ता.त्र्यंबकेश्वर जि.नाशिक</option>
+   <option value="मु.पो.महिरावणी ता.जि.नाशिक ">मु.पो.महिरावणी ता.जि.नाशिक</option>
+   <option value="इतर">इतर</option>
+   </select>
+   <br>
+
+   <label>जन्मतारीख:</label>
+<input type="text" id="dob" name="DOB" placeholder="जन्मतारीख निवडा"><br>
+
+    <label for="Age">वय:</label>
+<select id="Age" name="Age" class="short-dropdown">
+  <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="इतर">इतर</option>
+</select>
+ <br>
+    <label>लिंग:</label>
+    <select id="Gender" name="Gender" class="short-dropdown">
+  <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="स्त्री">स्त्री</option>
+  <option value="पुरुष">पुरुष</option>
+</select><br>
+
+    <label>अनुसूचित जमाती मधील जमात व पोट जात:</label>
+    <select id="CasteSubcaste" name="CasteSubcaste">
+ <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="हिंदू महादेव कोळी">हिंदू महादेव कोळी</option>
+  <option value="हिंदू कोकणा">हिंदू कोकणा</option>
+  <option value="हिंदू ठाकूर">हिंदू ठाकूर</option>
+  <option value="हिंदू कातकरी">हिंदू कातकरी</option>
+  <option value="हिंदू वारली">हिंदू वारली</option>
+  <option value="हिंदू भिल्ल">हिंदू भिल्ल</option>
+  <option value="इतर">इतर</option>
+</select><br>
+  <label for="prevSchool">मागील वर्षी शिकत असलेल्या शाळेचे नाव:</label>
+<select id="LastYearSchool" name="LastYearSchool" class="long-dropdown">
+  <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="विद्या प्रशाला हायस्कूल व ज्युनि.कॉलेज तळेगांव (अं.)">विद्या प्रशाला हायस्कूल व ज्युनि.कॉलेज तळेगांव (अं.)</option>
+  <option value="जि.प.शाळा तळेगाव (अं.)">जि.प. शाळा तळेगाव (अं.)</option>
+  <option value="जि.प.प्राथ.शाळा खंबाळे">जि.प.प्राथ.शाळा खंबाळे</option>
+  <option value="जि.प.प्राथ.शाळा वाढोली">जि.प.प्राथ.शाळा वाढोली</option>
+  <option value="जि.प.प्राथ.शाळा जातेगाव">जि.प.प्राथ.शाळा जातेगाव</option>
+  <option value="जि.प.प्राथ.शाळा मुळेगाव">जि.प.प्राथ.शाळा मुळेगाव</option>
+  <option value="जि.प.प्राथ.शाळा दहेगाव">जि.प.प्राथ.शाळा दहेगाव</option>
+  <option value="जि.प.प्राथ.शाळा महरावणी">जि.प.प्राथ.शाळा महरावणी</option>
+  <option value="इतर">इतर</option>
+</select><br>
+    
+    <label>आधार क्रमांक:</label>
+    <input type="text" name="AadhaarNumber"><br>
+
+    <label>मोबाईल नंबर:</label>
+    <input type="text" name="MobileNumber"><br>
+
+   <h3>आई-वडिलांची माहिती</h3>
+
+<div class="form-row">
+    <label for="FatherOccupation">वडिलांचा व्यवसाय:</label>
+    <select id="FatherOccupation" name="FatherOccupation">
+      <option value="" disabled selected hidden>-- निवडा --</option>
+      <option>शेती</option>
+      <option>मजूरी</option>
+      <option>कंपनी कामगार</option>
+      <option>सुतार</option>
+      <option>ड्रायव्हर</option>
+      <option>शिक्षक</option>
+      <option>नोकरी</option>
+      <option value="इतर">इतर</option>
+    </select>
+</div>
+<input type="text" id="fatherOccupationOther" placeholder="इतर टाका" style="display:none;">
+
+    <label>कुटुंबाचे एकूण वार्षिक उत्पन्न:</label>
+    <input type="text" name="TotalAnnualIncome"><br>
+
+    <label>आई व वडील नोकरीमध्ये असल्यास उत्पन्न:</label>
+    <input type="text" name="AnnualIncomeFromJob"><br>
+
+    <label>इतर मार्गाने मिळणारे वार्षिक उत्पन्न:</label>
+    <input type="text" name="AnnualIncomeOther"><br>
+
+    <label for="BankName">विद्यार्थ्याचे खाते असलेल्या बँकेचे नाव:</label>
+<select id="BankName" name="BankName">
+  <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="State Bank of India">State Bank of India</option>
+  <option value="Central Bank of India">Central Bank of India</option>
+  <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+  <option value="Bank of Baroda">Bank of Baroda</option>
+  <option value="Canara Bank">Canara Bank</option>
+  <option value="Syndicate Bank">Syndicate Bank</option>
+  <option value="इतर">इतर</option>
+</select><br>
+
+    <label for="BankBranch">शाखा:</label>
+<select id="BankBranch" name="BankBranch">
+  <option value="" disabled selected hidden>-- निवडा --</option>
+  <option value="महिरावणी">महिरावणी</option>
+  <option value="सातपूर">सातपूर</option>
+  <option value="नाशिक">नाशिक</option>
+  <option value="त्र्यंबकेश्वर">त्र्यंबकेश्वर</option>
+  <option value="विल्होळी">विल्होळी</option>
+  <option value="वाडीवऱ्हे">वाडीवऱ्हे</option>
+  <option value="इतर">इतर</option>
+</select><br>
+
+    <label>खाते क्रमांक:</label>
+    <input type="text" name="AccountNumber"><br>
+
+    <label>IFSC कोड:</label>
+    <input type="text" name="IFSCCode"><br>
+
+    <label for="ClassTeacherName">वर्गशिक्षकाचे नाव:</label>
+<select id="ClassTeacherName" name="ClassTeacherName">
+  <option value="ClassTeacherName" disabled selected hidden>-- निवडा --</option>
+  <option value="श्री.प्रकाश पंढरीनाथ गवळी">श्री.प्रकाश पंढरीनाथ गवळी</option>
+  <option value="श्रीम.संगिता पांडुरंग कुवर">श्रीम.संगिता पांडुरंग कुवर</option>
+  <option value="इतर">इतर</option>
+</select><br>
+
+ <div style="display:flex; justify-content:center; margin-top:20px;">
+  <button type="button" onclick="generatePDF()" 
+    style="padding:8px 18px; background-color:#007bff; color:#fff; border:none; border-radius:4px; cursor:pointer;">
+    Download PDF
+  </button>
+</div>
+<script>
+$(function() {
+    $("input[name='DOB']").datepicker({
+        dateFormat: "dd-mm-yy",    // Indian style date
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-25:+5"        // last 25 years to 5 years ahead
+    });
+});
+</script>
+
+<!-- Add these lines -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

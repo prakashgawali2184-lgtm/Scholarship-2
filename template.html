@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <title>शिष्यवृत्ती अर्ज नमुना</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: 'Mangal', Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.15;
+      color: #000;
+    }
+
+   
+    h1, h2, h3 {
+      text-align: center;
+      margin: 2px 0;
+      line-height: 1.1;
+    }
+
+    h1 { font-size: 13pt; font-weight: bold; }
+    h2 { font-size: 12pt; font-weight: bold; }
+    h3 { font-size: 11pt; font-weight: 600; }
+
+    /* New class for left-aligned headers */
+    .left-align {
+      text-align: left;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin: 3px 0;
+      text-align: justify;
+    }
+
+    .field {
+      font-weight: 600;
+    }
+
+    .sig {
+      display: inline-block;
+      min-width: 120px;
+      border-bottom: 1px solid #000;
+      margin-left: 5px;
+    }
+
+    .avoid-break { page-break-inside: avoid; }
+
+    .list p {
+      margin: 2px 0;
+    }
+  .underline-header {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   }
+   body {
+    font-family: 'Mangal', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45; /* increased from 1.15 to 1.35 for better spacing */
+    color: #000;
+}
+
+p {
+    margin: 5px 0;  /* increased from 3px 0 to 5px 0 for more space between lines */
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    margin: 5px 0;  /* slightly more margin to separate headers from paragraphs */
+}
+ .title-section h3,
+.title-section h2,
+.title-section h1 {
+    display: block;           /* each heading on a new line */
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;            /* vertical spacing between headings */
+    text-decoration: none;     /* remove any underline */
+    font-weight: 600;
+}
+
+.title-section h2 {
+    font-size: 22px;
+    color: #010101;
+}
+
+.title-section h2 {
+    font-size: 18px;
+    color: #000000;
+}
+/* Fix headers: remove underline, ensure each on separate line */
+.title-section h3 {
+    font-size: 16px;
+    color: #0c0c0c;
+    margin: 5px 0;      /* spacing between lines */
+    text-align: center; /* keep centered */
+    text-decoration: none; /* remove underline */
+    border: none !important; /* remove any inherited border-bottom */
+    display: block;     /* ensure each h3 is on its own line */
+}
+/* --- A4 PAGE LAYOUT FIXED --- */
+.page {
+    width: 195mm;              /* inner width after margins */
+    min-height: 277mm;         /* inner height */
+    margin: 0 auto;
+    padding: 8mm;             /* equal padding on all sides */
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+    page-break-after: always;
+    line-height: 1.7;   /* increase or adjust (1.4–1.8 works well) */
+}
+  
+/* Titles formatting (no underline) */
+.title-section h2,
+.title-section h2,
+.title-section h3 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+    border: none !important;
+    text-decoration: none;
+  
+  }
+h3.left-align {
+  color: black !important;
+}
+/* Center only the exact h2 with both classes */
+.page h2.underline-header.left-align {
+  display: block !important;
+  width: 100% !important;
+  margin: 0.25rem 0 !important;
+  text-align: center !important;
+}
+/* Remove the default underline from this h2 */
+.page h2.underline-header.left-align {
+  border-bottom: none !important;  /* disables any inherited underline */
+}
+
+/* underline only under the text */
+.page h2.underline-header.left-align .underline-text {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  line-height: 1;
+}
+.student-info-header {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 5px 0;
+}
+</style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="title-section">
+    <h3>५</h3>
+    <h3>परिशिष्ट अ</h3>
+    <h3>अनुसूचित जमाती (एस.टी.) ५ वी ते १० वी</h3>
+    <h2>अर्जाचा नमुना</h2>
+    <h2>सुवर्ण महोत्सवी आदिवासी पूर्व माध्यमिक शिष्यवृत्ती योजना</h2>
+    </div>
+    <div class="avoid-break">
+      <p>१) शाळेचे नाव व पत्ता : विद्या प्रशाला हायस्कूल व ज्युनियर कॉलेज, तळेगाव (अं.), ता. जि., नाशिक</p>
+
+      <p class="student-info-header">२) विद्यार्थ्याची माहिती :</p>
+
+      <p>१) विद्यार्थ्याचे पूर्ण नाव (शाळेमधील अभिलेखा नुसार): <span class="field">{{StudentName}}</span></p>
+      <p>जनरल रजिस्टर नंबर: <span class="field">{{GRNumber}}</span></p>
+      <p>२) इयत्ता : <span class="field">{{Class}}</span> तुकडी : <span class="field">{{Division}}</span></p>
+      <p>३) आईचे नाव : <span class="field">{{MotherName}}</span></p>
+      <p>४) वडिलांचे नाव : <span class="field">{{FatherName}}</span></p>
+      <p>५) आई-वडिलांचा कायमचा पूर्ण पत्ता : <span class="field">{{PermanentAddress}}</span></p>
+      <p>६) सध्याचा पूर्ण पत्ता (पत्रव्यवहारासाठी): <span class="field">{{CurrentAddress}}</span></p>
+      <p>७) विद्यार्थ्याची/विद्यार्थिनीची जन्मतारीख : <span class="field">{{DOB}}</span> वय : <span class="field">{{Age}}</span></p>
+      <p>८) लिंग : <span class="field">{{Gender}}</span></p>
+      <p>९) अनुसूचित जमातीमधील जमात व पोट जात : <span class="field">{{CasteSubcaste}}</span></p>
+      <p>१०) मागील वर्षी शिकत असलेल्या शाळेचे नाव : <span class="field">{{LastYearSchool}}</span></p>
+      <p>११) मागील वर्षी मिळालेल्या शिष्यवृत्तीची माहिती : सुवर्ण महोत्सवी आदिवासी पूर्व माध्यमिक शिष्यवृत्ती </p>
+      <p>१२) आधार क्रमांक : <span class="field">{{AadhaarNumber}}</span></p>
+      <p>१३) मोबाईल नंबर : <span class="field">{{MobileNumber}}</span></p>
+      <h3 class="underline-header left-align">आई-वडिलांची माहिती</h3>
+      <p>१) आईचे नाव : <span class="field">{{MotherName}}</span></p>
+      <p>२) वडिलांचे नाव : <span class="field">{{FatherName}}</span></p>
+      <p>३) वडिलांचा व्यवसाय : <span class="field">{{FatherOccupation}}</span></p>
+      <p>४) कुटुंबाचे वार्षिक उत्पन्न : <span class="field">{{TotalAnnualIncome}}</span></p>
+      <p>अ) आई व वडील नोकरी मध्ये असल्यास त्यामधून मिळणारे वार्षिक उत्पन्न </p>
+      <p>उदा.(मूळ वेतन व भत्ते): <span class="field">{{AnnualIncomeFromJob}}</span></p>
+      <p>ब) अन्य मार्गाने मिळणारे उत्पन्न : <span class="field">{{AnnualIncomeOther}}</span></p>
+      <p>५)विद्यार्थ्याचे खाते असलेल्या राष्ट्रीयकृत बँकेचे नाव : <span class="field">{{BankName}}</span></p>
+      <p>शाखा : <span class="field">{{BankBranch}}</span>
+      <p>खाते क्रमांक : <span class="field">{{AccountNumber}}</span></p>
+      <p>IFSC कोड : <span class="field">{{IFSCCode}}</span></p>
+
+      <p><strong>* वडील हयात नसल्यास आईची माहिती द्यावी. आई व वडील दोन्ही हयात नसल्यास इतर पालक  
+                       ज्यांच्यावर विद्यार्थी/विद्यार्थिनी पूर्णपणे अवलंबून आहे त्यांची माहिती द्यावी.</strong></p>
+    
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="avoid-break">
+      <p>(अर्जासोबत विद्यार्थ्याच्या जातीचा दाखला व आई-वडिलांचा उत्पन्नाचा दाखला यांच्या सत्यप्रती जोडाव्यात. वडील हयात नसल्यास मृत्यूचा दाखला जोडावा. दोन्ही हयात नसल्यास पालकांबाबत सविस्तर माहिती अनुक्रमांक ३ येथे नमूद करावी.)</p>
+
+      <h2 class="underline-header left-align"><span class="underline-text">हमीपत्र</span></h2>
+      <p> मी/आम्ही खाली सही करणार/करणारे प्रतिज्ञापत्र करतो/ करते की, सुवर्ण महोत्सवी आदिवासी पूर्व माध्यमिक शिष्यवृत्ती मिळण्यासाठी अटी - शर्ती मला/आम्हास मान्य आहेत. 
+        अर्जात वरील प्रमाणे सर्व माहिती पूर्णपणे सत्य आहे. सदरची माहिती खोटी अथवा अपुरी आढळल्यास भारतीय दंड विधान नियम१९९ व २०० तसेच इतर नियम आणि कायद्याप्रमाणे 
+        होणाऱ्या दंडास शिक्षेस मी /आम्ही पात्र राहीन /राहू मी /आम्ही दिलेली कोणतीही माहिती वा निवेदन चुकीचे आढळून आल्यास सक्षम प्राधिकाऱ्याने दिलेला निर्णय अंतिम असेल व 
+        माझ्यावर /आम्हावर बंधनकारक असेल अशी मी /आम्ही हमी देतो/देते. जर शिष्यवृत्तीची रक्कम जास्तीची मिळाली तर ती मी /आम्ही परत करेन/ करू. अशी जास्तीची अथवा 
+        अन्य कारणामुळे वसूल करण्यात येणारी रक्कम मी /आम्ही पूर्णपणे परत करण्याची हमी देतो/ देते. आमचे उत्पन्नाचे व जातीची माहिती खोटी आढळल्यास होणाऱ्या कारवाईस मी /आम्ही स्वतः जबाबदार राहू.</p>
+
+      <div style="display:flex; justify-content:space-between; margin-top:15px; width:80%;">
+  <div style="display:flex; flex-direction:column;">
+    <span>आई/वडिलांची सही :</span>
+  </div>
+
+  <div style="display:flex; flex-direction:column;">
+    <span>विद्यार्थीची सही :</span>
+  </div>
+</div>
+
+      <h>शाळेने द्यावयाची माहिती</h3>
+      <p>अर्जदाराने वरील अर्जात दिलेली सर्व माहिती त्याच्या कुटुंबाचे सर्व मार्गांनी मिळणारे वार्षिक उत्पन्न शैक्षणिक माहिती पूर्णपणे तपासलेली असून ती बरोबर आहे. 
+        तसेच शासन निर्णय क्र./आवीशी- २००९///प्र.क्र.-२०/का.१२, दिनांक ३१मे, २०१० चे मधील नमूद सर्व अटी- शर्तींची पूर्तता होत असल्याने सदर विद्यार्थ्याला विद्यार्थिनीला शिष्यवृत्ती देण्यास शिफारस करण्यात येत आहे.</p>
+
+      <p>मोबाईल नंबर : <span class="field">{{MobileNumber}}</span></p>
+
+      <h3 class="left-align">ऑनलाइन/ऑफलाइन अर्जासोबत जोडावयाची कागदपत्रे</h3>
+      <div class="list">
+        <p>१) वार्षिक उत्पन्न दाखला मूळ प्रत</p>
+        <p>२) अनुसूचित जमाती जातीचा दाखला सत्यप्रत</p>
+        <p>३) जातीचा दाखला नसल्यास बोनाफाईड</p>
+        <p>४) आधार कार्ड सत्यप्रत</p>
+        <p>५) रहिवासी दाखला मूळ/सत्यप्रत</p>
+        <p>६) बँक खात्याची सत्यप्रत (विद्यार्थ्याचे खाते)</p>
+        <p>७) IFSC कोड</p>
+        <p>८) पासपोर्ट कलर फोटो (युनिफॉर्ममध्ये)</p>
+      </div>
+
+      <p><strong>आई व वडील दोन्ही हयात नसल्यास मृत्यूचा दाखला सत्यप्रत मागील वर्षी नापास असल्यास शिष्यवृत्ती मिळत नाही पास झालेल्या वर्षी द्यावी. पास झालेल्या वर्षाची मार्कशीट द्यावी(सत्यप्रत). 
+        विद्यार्थी शिष्यवृत्ती पात्र नसल्यास आई/वडिलांची अगर पालक ज्यावर विद्यार्थी / विद्यार्थिनी पूर्णपणे अवलंबून आहे , यांचा लेखी सबळ पुरावा जोडावा.</strong></p>
+      <div style="display:flex; justify-content:space-between; margin-top:20px; width:90%;">
+  <!-- Left block: शिक्षक -->
+  <div style="display:flex; flex-direction:column;">
+    <span>वर्गशिक्षकांचे नाव : <span class="field">{{ClassTeacherName}}</span></span>
+    <span>वर्गशिक्षकाची सही :</span>
+  </div>
+
+  <!-- Right block: मुख्याध्यापक -->
+  <div style="display:flex; flex-direction:column; text-align:left;">
+    <span>मुख्याध्यापकाची सही :</span>
+    <span>नाव व पदनाम</span>
+  </div>
+</div>
+      
+  </div>
+  </body>
+  </html>
